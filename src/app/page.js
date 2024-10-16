@@ -2,6 +2,7 @@ import pageStyles from "./page.module.css";
 import ShowcaseImage from "@/components/ShowcaseImage";
 
 export default function Home() {
+  console.log("home");
   return (
     <main>
       <h1>The Squigly Zebra</h1>

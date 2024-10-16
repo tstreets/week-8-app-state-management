@@ -1,5 +1,6 @@
 import "./globals.css";
 import Nav from "@/components/Nav";
+import { AppProvider } from "@/hooks/useAppState";
 
 export const metadata = {
   title: "Week 8",
@@ -10,8 +11,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Nav />
-        {children}
+        <AppProvider>
+          <Nav />
+          {children}
+        </AppProvider>
       </body>
     </html>
   );
