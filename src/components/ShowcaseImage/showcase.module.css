@@ -1,14 +1,25 @@
 .showcaseText {
   background-color: #3a373775;
+  color: white;
+
   width: 100%;
   height: 30px;
+
   overflow: hidden;
   margin-top: auto;
-  color: white;
+
+  display: flex;
+  flex-direction: column;
+  transition: height 0.5s;
 }
 
 .showcaseText h4 {
   font-size: 20px;
+  align-self: center;
+}
+
+.showcaseText p {
+  align-self: center;
 }
 
 .showcaseText:hover {
@@ -17,8 +28,10 @@
 
 .showcaseButton {
   min-height: 20px;
+  width: 100px;
   background-color: #e8c21b;
 
   padding: 10px 20px;
   border: none;
+  align-self: center;
 }
