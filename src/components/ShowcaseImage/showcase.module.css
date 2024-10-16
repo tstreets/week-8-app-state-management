@@ -1,4 +1,24 @@
+.showcaseText {
+  background-color: #3a373775;
+  width: 100%;
+  height: 30px;
+  overflow: hidden;
+  margin-top: auto;
+  color: white;
+}
+
+.showcaseText h4 {
+  font-size: 20px;
+}
+
+.showcaseText:hover {
+  height: 120px;
+}
+
 .showcaseButton {
-  height: 20px;
-  background-color: rgb(232, 194, 27);
+  min-height: 20px;
+  background-color: #e8c21b;
+
+  padding: 10px 20px;
+  border: none;
 }
