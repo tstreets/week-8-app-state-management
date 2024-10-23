@@ -8,9 +8,6 @@ export default function About() {
 
   return (
     <>
-      <Head>
-        <title>Week 7 - About</title>
-      </Head>
       <main>
         <h1>About</h1>
       </main>
