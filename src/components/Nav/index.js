@@ -1,17 +1,18 @@
 import navStyles from "./nav.module.css";
+import Link from "next/link";
 
 export default function Nav() {
   return (
     <nav className={navStyles.mainNav}>
       <ul>
         <li>
-          <a href="/">Home</a>
+          <Link href="/">Home</Link>
         </li>
         <li>
-          <a href="/about">About</a>
+          <Link href="/about">About</Link>
         </li>
         <li>
-          <a href="/">Contact</a>
+          <Link href="/">Contact</Link>
         </li>
       </ul>
     </nav>
