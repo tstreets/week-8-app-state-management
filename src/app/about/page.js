@@ -20,7 +20,13 @@ export default function About() {
     setNewPersonForm({ name: "", title: "" });
   }
 
-  console.log(appState.people);
+  const peopleJsx = appState.people.map(function (person) {
+    return (
+      <li>
+        {person.name} (<i>{person.title}</i>)
+      </li>
+    );
+  });
 
   return (
     <>
@@ -52,6 +58,8 @@ export default function About() {
             <input type="submit" value="Add Person" />
           </div>
         </form>
+
+        <ul>{peopleJsx}</ul>
       </main>
     </>
   );
