@@ -3,7 +3,7 @@ import useAppState from "../../hooks/useAppState";
 import { useState } from "react";
 
 export default function About() {
-  const [newPersonForm, setNewPersonForm] = useState({ name: "" });
+  const [newPersonForm, setNewPersonForm] = useState({ name: "", title: "" });
 
   const appState = useAppState();
 
@@ -17,7 +17,7 @@ export default function About() {
   function submitNewPerson(e) {
     e.preventDefault();
     appState.addPerson(newPersonForm);
-    setNewPersonForm({ name: "" });
+    setNewPersonForm({ name: "", title: "" });
   }
 
   console.log(appState.people);
@@ -37,6 +37,17 @@ export default function About() {
               onChange={changeFormField}
             />
           </div>
+
+          <div>
+            <label htmlFor="title">Title</label>
+            <input
+              id="title"
+              name="title"
+              value={newPersonForm.title}
+              onChange={changeFormField}
+            />
+          </div>
+
           <div>
             <input type="submit" value="Add Person" />
           </div>
