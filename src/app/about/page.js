@@ -20,9 +20,9 @@ export default function About() {
     setNewPersonForm({ name: "", title: "" });
   }
 
-  const peopleJsx = appState.people.map(function (person) {
+  const peopleJsx = appState.people.map(function (person, personIndex) {
     return (
-      <li>
+      <li key={`${person.name}-${personIndex}`}>
         {person.name} (<i>{person.title}</i>)
       </li>
     );
